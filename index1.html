@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Pass</title>
+</head>
+<body>
+    <table border="1" width="800">
+    <tr>
+        <td>
+        <center><img src="tsrtc.webp" width="100px"></center>
+          <h1>Telangana State Road Transport Corporation</h1>
+          <center><h1>General Bus Pass Application</h1></center>
+        </td>
+    </tr>
+    </table> 
+    <form action="./response.html" method="get">
+    <fieldset>
+        <legend>Applicant Details</legend>
+        
+        <pre>
+        <label for="name">Name:</label><input type="text" id="name" maxlength="20" required>                                                <label for="fathername">Father/Guardian name:</label><input type="text" id="fathername"><br>
+        <label for="birthday">Date of Birth:</label><input type="date" id="birthday" name="birthday">                                                <label for="Gender">Gender:</label><input type="radio" name="gender" id="male"><label for="male">Male</label><input type="radio" name="gender" id="female"><label for="female">Female</label>
+        <label for="age">Age:<input type="number" id="age"></label>                                                 <label for="age">Aadhar No:<input type="text" id="aadharno" maxlength="16" required></label>
+        <label for="whatsapp">WhatsApp No:<input type="text" id="whatsapp" maxlength="10" required></label>                                         <label for="email">E-mail id:</label><input type="text" id="email">
+        <label for="Photo">Photo:<input type="file" id="photo"></label>
+       </pre>
+    
+    </fieldset>
+    <fieldset>
+        <legend>Residential Address Details</legend>
+        <pre>
+            Applicant's Address:<textarea id="address" name="address" maxlength="20"required></textarea>       District: <select name="district" id="district"><option value="Nandyal">Nandyal</option><option value="Nellore">Nellore</option><option value="Kadapa">Kadapa</option><option value="Kurnool">Kurnool</option></select>
+            Mandal: <select name="mandal" id="mandal"><option value="Atmakur">Atmakur</option><option value="Kodur">Kodur</option><option value="Bapatla">Bapatla</option></select>                                 Village: <select name="village" id="village"><option value="Guntur">Guntur</option><option value="Nellore">Nellore</option><option value="Chittoor">Chittoor</option></select>                 
+            PinCode: <input type="text" id="pincode">
+        </pre>
+    </fieldset>
+    <fieldset>
+        <legend>Pass type details</legend>
+        City: <select name="city" id="city"><option value="Vijayawada">Vijayawada</option><option value="Kadapa">Kadapa</option><option value="Amaravati">Amaravati</option></select><br>   
+        Pass type: <select name="passtype" id="passtype"><option value="select" disabled selected>---select---</option><option value="Generalpass">General pass</option><option value="Ordinarypass">Ordinary Pass</option></select>
+
+    </fieldset>
+    <fieldset>
+        <legend>Mode of Payment & Pass Collection</legend>
+        Payment Mode : <select name="pmode" id="pmode"><option value="select" disabled selected>---select---</option><option value=" ">Payment at Counter</option><option value=" ">Payment at Online</option></select><br>
+        Pass Delivery Mode : <select name="pmode" id="pmode"><option value="select" disabled selected>---select---</option><option value=" ">at Counter</option><option value=" ">at Online</option></select><br>
+        Center at which you want to Collect Pass : <select name="pmode" id="pmode"><option value="select" disabled selected>---select---</option><option value=" ">Hyderabad</option><option value=" ">Secunderabad</option></select><br>
+    </fieldset>
+    <center>
+        <input type="Submit" value="Submit">
+    </center>
+
+
+</form>
+</body>
+</html>
